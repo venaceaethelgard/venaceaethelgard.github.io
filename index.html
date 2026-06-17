@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venace Aethelgard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+        /* Profile Image */
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            border: 2px solid #2a2a2a;
+            background-color: #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Author Name */
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 10px;
+            color: #d0d0d0;
+            text-transform: uppercase;
+        }
+        /* Cryptic Tagline */
+        .tagline {
+            font-size: 0.9rem;
+            font-weight: 300;
+            font-style: italic;
+            color: #666;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 25px;
+            letter-spacing: 2px;
+        }
+        /* Novel Grid */
+        .novel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+            justify-items: center;
+        }
+        .novel-card {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            max-width: 220px;
+        }
+        .novel-card:hover {
+            transform: translateY(-5px);
+            border-color: #555;
+        }
+        .novel-cover {
+            width: 100%;
+            height: 260px;
+            background-color: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            border-bottom: 1px solid #2a2a2a;
+        }
+        .novel-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .novel-info {
+            padding: 15px;
+            text-align: left;
+        }
+        .novel-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        .novel-link-text {
+            font-size: 0.8rem;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .novel-card:hover .novel-link-text {
+            color: #ffffff;
+        }
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+        }
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 4px;
+            }
+            .profile-image {
+                width: 90px;
+                height: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Image Placeholder (Replace 'src' with your image URL) -->
+        <div class="profile-image">
+            <img src="https://i.ibb.co/kVK6zNCR/1781725626076.png" alt="Venace Aethelgard" />
+        </div>
+        
+        <h1>Venace Aethelgard</h1>
+        <p class="tagline">I am the master. Sit.</p>
+        
+        <div class="novel-grid">
+            <!-- NOVEL 1: The Balance -->
+            <a href="#" class="novel-card" target="_blank">
+                <div class="novel-cover">
+                    <img src="https://i.ibb.co/X16CYYW/file-00000000e51471f49c5c62c7edf14b83.png" alt="The Balance" />
+                </div>
+                <div class="novel-info">
+                    <div class="novel-title">The Balance</div>
+                    <div class="novel-link-text">Read on Webnovel →</div>
+                </div>
+            </a>
+            
+            <!-- NOVEL 2: Supreme Rune Emperor -->
+            <a href="#" class="novel-card" target="_blank">
+                <div class="novel-cover">
+                    <img src="https://i.ibb.co/Cps2Lmxg/file-00000000dd20720a87c5640e20772df6.png" alt="Supreme Rune Emperor" />
+                </div>
+                <div class="novel-info">
+                    <div class="novel-title">Supreme Rune Emperor</div>
+                    <div class="novel-link-text">Read on Royal Road →</div>
+                </div>
+            </a>
+        </div>
+        
+        <footer>
+            The work continues.
+        </footer>
+    </div>
+</body>
+  </html>
